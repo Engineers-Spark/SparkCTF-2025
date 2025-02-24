@@ -1,0 +1,25 @@
+name: "Echo Chamber"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  I have a lot of random facts, but I can't remember them all. Can you help me remember them?
+
+  `nc tcp.espark.tn 6322`
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - {
+            type: "regex",
+            content: "^SparkCTF{5f94de56dd6b[a-fA-F0-9]{8}89fda5d64f4f}$",
+            data: "case_insensitive",
+        }
+files:
+  - handout/server.py
+state: hidden
+version: "0.1"

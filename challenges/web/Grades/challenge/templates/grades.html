@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="text-center mb-4">Grade Search</h2>
+
+<form action="/grades" method="POST">
+    <div class="input-group mb-4">
+        <input type="text" class="form-control" placeholder="Search by student name" name="search_query" required>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </div>
+</form>
+
+{% if results %}
+    <h4>Search Results:</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grade in results %}
+            <tr>
+                <td>{{ grade[1] }}</td>
+                <td>{{ grade[2] }}</td>
+                <td>{{ grade[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No results found. Try again with a different name.</p>
+{% endif %}
+{% endblock %}

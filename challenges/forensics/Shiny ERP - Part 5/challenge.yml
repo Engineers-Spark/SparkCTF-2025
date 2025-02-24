@@ -1,0 +1,23 @@
+name: "Shiny ERP Part 5 - Cats Website"
+author: "videx"
+category: forensics
+description: |-
+  We were analyzing some web traffic and we wanted to find the first time where someone tried to access the “/ecommerce” endpoint. 
+  Can you find the earliest occurrence’s user-agent as well as the exact timestamp (UTC).
+  Use the abbreviated month name.
+  
+  Format: SparkCTF{`<User-agent’s SHA256 checksum>_<DD/MMM/YYYY:HH:MM:SS>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{467466739e86a5470f166da4b4a6bddb717947ac844e662fa59a6cef2dd89c67_14/Feb/2025:21:08:25}
+requirements:
+    - "Shiny ERP Part 4 - Running Cats in Background"
+state: hidden
+version: "0.1"

@@ -1,0 +1,21 @@
+name: "KeePass"
+author: "Ourfelli"
+category: forensics
+description: |-
+  Well There's some HTTP activity going on in the network. Strangee ... all I did was start Keepass you need to find out what's going on.
+
+  Format: SparkCTF{f14g}
+
+  **author**: Ouerfelli
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{Pl3a5e_D0nt_St34l_M3_9dc40cd40f9b44451c8d444538208362}
+files:
+  - handout/KeePass.7z
+state: hidden
+version: "0.1"

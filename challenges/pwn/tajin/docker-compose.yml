@@ -1,0 +1,9 @@
+services:
+  tajin:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: tajin
+    privileged: true
+    ports:
+      - "4595:1337"

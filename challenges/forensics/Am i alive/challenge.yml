@@ -1,0 +1,18 @@
+name: "Am i alive?"
+author: "iwd"
+category: forensics
+description: |-
+  Am i dead already? how much time remaining to live?
+
+
+  **author**: iwd
+value: "500"
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{Does_Time_R34lly_m4tters?}
+state: hidden
+version: "0.1"

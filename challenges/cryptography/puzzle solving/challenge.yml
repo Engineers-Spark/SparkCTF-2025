@@ -1,0 +1,21 @@
+name: "puzzle solving"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  You’ve been given a mysterious token, an encrypted puzzle waiting to be solved. Can you find the key to escape the maze?
+
+  [https://puzzle-solving.espark.tn](https://puzzle-solving.espark.tn)
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{fefb57748e72eb450690163f3e954b55}
+files:
+  - handout/to_give.zip
+state: hidden
+version: "0.1"

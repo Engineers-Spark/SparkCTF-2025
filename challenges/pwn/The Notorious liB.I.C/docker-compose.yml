@@ -1,0 +1,12 @@
+services:
+  the_notorious_libc:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile    
+    container_name: the_notorious_libc
+    read_only: true
+    privileged: true
+    ports:
+      - "5087:1337"
+
+

@@ -1,0 +1,41 @@
+/* Table styles
+-------------------------------------------------- */
+
+
+// Vertically center text in cells
+.table td,
+th {
+  vertical-align: middle !important;
+}
+
+// Add some default spacing
+.table > tbody > tr > td {
+  padding: 0.8rem 1rem !important;
+}
+
+// Remove border line from thead of all tables
+.table > tbody {
+  border-top: none !important;
+}
+
+// Add some padding from the edge of table
+.table > thead > tr > td:first-of-type {
+  padding-left: 1rem !important;
+}
+
+.table > thead > th {
+  white-space: nowrap;
+}
+
+.table {
+  --bs-table-color-type: initial;
+  --bs-table-bg-type: initial;
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  --bs-table-bg: $bg-darker;
+  --bs-table-striped-bg: #222631;
+  width: 100%;
+  color: white;
+  margin-bottom: 1rem;
+  vertical-align: top;
+}

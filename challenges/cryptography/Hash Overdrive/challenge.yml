@@ -1,0 +1,21 @@
+name: "Hash Overdrive"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  The system relies on its calculations, trusting every output it produces. But can you use that to your advantage?
+
+  `nc tcp.espark.tn 5778`
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{e87c697d062f21434110160658d03f91}
+files:
+  - handout/task.py
+state: hidden
+version: "0.1"

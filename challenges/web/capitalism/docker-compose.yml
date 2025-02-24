@@ -1,0 +1,14 @@
+services:
+  ctfchallenge:
+    build:
+      context: ./challenge/web_capitalism
+      dockerfile: ./Dockerfile
+    container_name: capitalism 
+    read_only: true
+    cap_add:
+      - CHOWN
+      - DAC_OVERRIDE
+    cap_drop:
+      - ALL
+    ports:
+      - "4444:8080" 

@@ -1,0 +1,19 @@
+name: "bing chilling"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  binG cHillIng iN tHe sUn, wHat a fUn tHinG tO dO. bUt wHat aBout tHe cHillIng pArt? cAn yOu sOlve tHe pUzzle?
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{2ce9ce4243c8b4e222f1bf4df26a2175}
+files:
+  - handout/task.py
+state: hidden
+version: "0.1"

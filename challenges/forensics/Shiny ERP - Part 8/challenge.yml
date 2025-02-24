@@ -1,0 +1,22 @@
+name: "Shiny ERP Part 8 - Cat-Brain.exe has stopped working!"
+author: "videx"
+category: forensics
+description: |-
+  We found something strange, we think that the attacker tried to use another operating system credentials dumping tool on this host… what a silly cat. 
+  For the sake of this investigation you find the URL of that tool?
+  
+  Format: SparkCTF{`<SHA256 checksum of the URL>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{d04138e35d7cbffb1ecf153e48352f5c33908a13e84eba11889ad9e6b906f41d}
+requirements:
+    - "Shiny ERP Part 7 - A Cat Pwned You!"
+state: hidden
+version: "0.1"

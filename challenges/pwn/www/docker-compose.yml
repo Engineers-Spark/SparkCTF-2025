@@ -1,0 +1,9 @@
+services:
+  www:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: www
+    privileged: true
+    ports:
+      - "5515:1337"

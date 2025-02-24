@@ -1,0 +1,21 @@
+name: "Grades"
+author: "puu7"
+category: web
+description: |-
+  Grades measure effort, not intelligence. True learning goes beyond the numbers.
+
+  [https://grades.espark.tn](https://grades.espark.tn)
+
+  **author**: puu7
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{863f009b1339329fab182e93e55461dce0099dd683a7baa0881387d7863c2e5b}
+files:
+  - handout/web_grades.7z
+state: hidden
+version: "0.1"

@@ -1,0 +1,19 @@
+name: "Riders of the Cipher"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  Hidden within the noise lies a pattern waiting to be uncovered. Tune in carefully, can you decode the message?
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{cowboys_find_every_flag_in_style}
+files:
+  - handout/to_give.zip
+state: hidden
+version: "0.1"

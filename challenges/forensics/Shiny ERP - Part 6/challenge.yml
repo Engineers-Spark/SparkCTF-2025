@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 6 - Cats and Shells"
+author: "videx"
+category: forensics
+description: |-
+  We suspect that someone was able to get a reverse shell on the server, can you find the IP and port?
+  
+  Format: SparkCTF{`<Attacker IP>_<Port>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{192.168.1.15_3331}
+requirements:
+    - "Shiny ERP Part 5 - Cats Website"
+state: hidden
+version: "0.1"

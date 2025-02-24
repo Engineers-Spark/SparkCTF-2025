@@ -1,0 +1,21 @@
+name: "Rusty Server"
+author: "Iyed"
+category: rev
+description: |-
+  We got access to some vulnerable server however every command we execute is somehow encoded or encrypted using an unknown algorithm.
+  
+  We got a PCAP file for you! Can you please help us recover the results of our executed commands! We were also able to simulate the host environment with a Dockerfile.
+
+  **author**: Iyed
+value: "500"
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{9f86edd05061f01c74cb7b1f7c899706afa068297da63586986bef9ffdb3f76d}
+state: hidden
+files:
+  - handout/chall.zip
+version: "0.1"

@@ -1,0 +1,64 @@
+# Ignore build output directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+*.exe
+*.dll
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files from Visual Studio
+.vs/
+
+# .NET Core CLI tools
+dotnet-tools/
+
+# Local History for Rider
+.idea/
+
+# JetBrains Rider
+.idea/
+
+# NPM packages
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Configuration files
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+
+# Ignore IDE specific folders and files (e.g. Visual Studio Code, JetBrains Rider, etc.)
+.vscode/
+.idea/
+
+# Ignore NuGet package folders
+packages/
+
+# Ignore generated Swagger files
+swagger/
+
+# Ignore other IDE files (optional)
+*.code-workspace

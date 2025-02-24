@@ -1,0 +1,25 @@
+name: "HomeLand Justice"
+author: "Ourfelli"
+category: forensics
+description: |-
+  HomeLand Justice was a disruptive campaign involving the use of ransomware, wiper malware, 
+  and sensitive information leaks conducted by Iranian state cyber actors.
+  You're Tasked to refer to the Mitre ATT&CK framework and answer a series of questions to acquire the flag.
+  
+  `$ nc sparkctf.tech 6000`
+
+  **author**: Ouerfelli
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - {
+        type: "regex",
+        content: "^SparkCTF{[a-fA-F0-9]{12}[a-zA-Z0-9]+[a-fA-F0-9]{12}_1t_15_4ll_4b0ut_M1Tr3_4nd_4tt4ck_T3chn1qu3s}$",
+        data: "case_insensitive",
+    }
+state: hidden
+version: "0.1"

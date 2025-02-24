@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  permutation_paradox:
+    container_name: permutation_paradox
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "2477:1337"
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped

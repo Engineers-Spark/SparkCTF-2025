@@ -1,0 +1,13 @@
+HEXANE
+2021
+T1190
+Microsoft SharePoint ,SharePoint
+CVE-2019-0604
+S1150
+GoXML.exe
+S1151
+cl.exe
+Mellona.exe
+kl.ps1
+pickers.aspx, error4.aspx, ClientBin.aspx
+HTTP

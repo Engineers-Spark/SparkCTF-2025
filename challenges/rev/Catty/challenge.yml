@@ -1,0 +1,20 @@
+
+name: "Catty"
+author: "GARROURA"
+category: rev
+description: |-
+  I have lost my cat inside this binary ... 
+
+  https://drive.google.com/drive/folders/1jmM_-2atbjsYORV1SqZhM_cqcEQQ9My0?usp=sharing
+
+  **author**: GARROURA
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{e208d2110981de5687dc1b4d27db41dd}
+state: hidden
+version: "0.1"

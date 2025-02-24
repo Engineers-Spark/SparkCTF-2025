@@ -1,0 +1,25 @@
+name: "Guess the Flag"
+author: "AGENTOO"
+category: cryptography
+description: |-
+  I have a flag in my mind, can you guess it?
+
+  `nc tcp.espark.tn 6543`
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - {
+        type: "regex",
+        content: "^SparkCTF{30ead4950a91[a-fA-F0-9]{8}352262dce642}$",
+        data: "case_insensitive",
+    }
+files:
+  - handout/task.py
+state: hidden
+version: "0.1"

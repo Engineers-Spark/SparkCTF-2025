@@ -1,0 +1,8 @@
+services:
+  challenge:
+    container_name: puzzle_solving
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "2047:1337"

@@ -1,0 +1,130 @@
+﻿@page
+@model VulnerableApp.Pages.IndexModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Pro - Report Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea, select, button {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .output h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bug Bounty Report Generator</h1>
+        <form method="post">
+            <label for="title">Report Title:</label>
+            <input type="text" id="title" name="title" placeholder="e.g., SQL Injection in Login Form" />
+
+            <label for="vuln-type">Vulnerability Type:</label>
+            <select id="vuln-type" name="vuln-type">
+                <option value="sql-injection">SQL Injection</option>
+                <option value="xss">Cross-Site Scripting (XSS)</option>
+                <option value="rce">Remote Code Execution (RCE)</option>
+                <option value="csrf">Cross-Site Request Forgery (CSRF)</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="cvss">CVSS Score:</label>
+            <input type="number" step="0.1" id="cvss" name="cvss" placeholder="e.g., 7.5" />
+
+            <label for="description">Vulnerability Description:</label>
+            <textarea id="description" name="description" rows="5" placeholder="Provide a detailed description of the vulnerability..."></textarea>
+
+            <label for="impact">Impact:</label>
+            <textarea id="impact" name="impact" rows="3" placeholder="Describe the potential impact of the vulnerability..."></textarea>
+
+            <label for="remediation">Remediation:</label>
+            <textarea id="remediation" name="remediation" rows="3" placeholder="Suggest steps to mitigate the vulnerability..."></textarea>
+
+            <label for="references">References:</label>
+            <textarea id="references" name="references" rows="3" placeholder="Provide any relevant links or references..."></textarea>
+
+            <button type="submit">Generate Report</button>
+        </form>
+
+        @if (Model.RenderedOutput != null)
+        {
+            <div class="output">
+                <h2>Generated Bug Bounty Report</h2>
+                <p><strong>Title:</strong> @Request.Form["title"]</p>
+                <p><strong>Vulnerability Type:</strong> @Request.Form["vuln-type"]</p>
+                <p><strong>CVSS Score:</strong> @Model.CVSS</p>
+                <p><strong>Description:</strong> @Html.Raw(Model.RenderedOutput)</p>
+                <p><strong>Impact:</strong> @Model.Impact</p>
+                <p><strong>Remediation:</strong> @Model.Remediation</p>
+                <p><strong>References:</strong> @Model.References</p>
+            </div>
+        }
+    </div>
+</body>
+</html>

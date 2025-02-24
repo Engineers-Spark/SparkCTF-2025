@@ -1,0 +1,22 @@
+name: "FoodStealer Part 7 - A Cats Mischief"
+author: "videx"
+category: forensics
+description: |-
+  Coffee, our junior analyst spilled his drink and ruined the documents that contained the password to log into the machine. 
+  Michmecha mentioned that the victim uses generic passwords and it can be retrieved using the artifacts we already have.  
+  
+  Format: SparkCTF{`<NT hash>_<password>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{bed9f2b7b8436258036c87cb7334fda4_yourock}
+requirements:
+    - "FoodStealer Part 6 - Too Many Cat Strings!"
+state: hidden
+version: "0.1"

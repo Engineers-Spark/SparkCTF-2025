@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 3 - A Cat's Network"
+author: "videx"
+category: forensics
+description: |-
+  We are missing some host networking details, can you find the IP and MAC address for the main network interface?
+  
+  Format: SparkCTF{`<Host IP>_<MAC Address>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{192.167.1.29_08:00:27:2f:99:43}
+requirements:
+    - "Shiny ERP Part 2 - Basic Cat Stuff"
+state: hidden
+version: "0.1"

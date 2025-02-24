@@ -1,0 +1,10 @@
+services:
+  challenge:
+    container_name: "homeland-justice"
+    restart: unless-stopped
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "6001:6001"
+    privileged: true

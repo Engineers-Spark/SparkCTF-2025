@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: echo_chamber
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 6969 /home/ctf/launch.sh"
+    ports:
+      - "6322:6969"
+    read_only: true

@@ -1,0 +1,21 @@
+name: "FoodStealer Part 6 - Too Many Cat Strings!"
+author: "videx"
+category: forensics
+description: |-
+  We believe that the victim’s data was exfiltrated to an external endpoint and part of your assessment is to find that endpoint and exposed data.  
+  
+  Format: SparkCTF{`<SHA256 checksum of the server>_<number of exfiltrated files>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{96daa6039028b714afc5ad7fccdc171d03835c80f1dcd518f2979432eda20213_62876}
+requirements:
+    - "FoodStealer Part 5 - Stealthy Cat"
+state: hidden
+version: "0.1"

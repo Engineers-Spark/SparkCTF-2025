@@ -1,0 +1,30 @@
+
+services:
+  todo-db:
+    container_name: todo-db
+    build: ./challenge/db/
+    image: todo-db
+    ports:
+      - 27017:27017
+    environment:
+      - FLAG=SparkCTF{sleep_predict_leak_repeat_cedce2839c86d1f8}
+    volumes:
+      - todo-db:/data/db
+
+  todo-app:   
+    container_name: todo-app
+    image: todo-app
+    build: ./challenge/app/
+    depends_on:
+      - todo-db
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    environment:
+      - MONGO_URI=mongodb://todo-db:27017/todo
+      - CAPTCHA_SECRET=ES_0ad9dc495c62457794fa8160410f1418
+      #- CAPTCHA_SECRET=0x0000000000000000000000000000000000000000
+    privileged: true
+    
+volumes:
+  todo-db:

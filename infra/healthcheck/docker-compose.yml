@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  healthcheck:
+    container_name: healthcheck
+    hostname: healthcheck
+    image: healthcheck
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./app:/home/healthcheck

@@ -1,0 +1,23 @@
+name: "retro"
+author: "retr0"
+category: pwn
+description: |-
+  do your thing.
+
+  `nc tcp.espark.tn 5515`
+  
+  **NB: pls work on your exploit locally first!**
+
+  **author**: retr0
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{3dd78ea035686a9ec5fd3f67bbd4383ed0020b120ede6f64cc6a13e60611aca4}
+files:
+  - handout/retro.7z
+state: hidden
+version: "0.1"

@@ -1,0 +1,46 @@
+1:
+  blockchain:
+    - "Bytezzzz"
+    - "Merkle Who"
+    - "Mnemonic"
+  cryptography:
+    - "Guess The Flag"
+    - "Echo Chamber"
+    - "Hash Overdrive"
+    - "puzzle solving"
+    - "bing chilling"
+  forensics:
+    - "Homeland Justice"
+    - "FoodStealer - Scenario"
+    - "KeePass"
+    - "007"
+  hardware:
+    - "circuit layer"
+    - "sCPPy"
+  pwn:
+    - "roller"
+    - "www"
+    - "The Notorious liB.I.C"
+  rev:
+    - "Catty"
+    - "Checker"
+  web:
+    - "todo"
+    - "Grades"
+    - "capitalism"
+
+2:
+  blockchain:
+    - "Moveit"
+  cryptography:
+    - "Permutation Paradox"
+    - "Riders of the Cipher"
+  forensics:
+    - "Shiny ERP - Scenario"
+  hardware:
+    - "analyser"
+  pwn:
+    - "retro"
+  rev:
+  web:
+    - "BugReportGen"

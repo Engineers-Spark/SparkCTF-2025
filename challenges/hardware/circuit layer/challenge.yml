@@ -1,0 +1,19 @@
+name: "circuit layer"
+author: "dullahan"
+category: hardware
+description: |-
+  open the game and reverse the circuit to find the flag
+
+  https://drive.google.com/file/d/10_71OX2-nDVdvk8__r9ER5an7vvqL8nu/view
+
+  **author**: dullahan
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{000110001110001}
+state: hidden
+version: "0.1"

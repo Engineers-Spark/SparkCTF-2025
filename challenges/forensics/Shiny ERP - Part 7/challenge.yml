@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 7 - A Cat Pwned You!"
+author: "videx"
+category: forensics
+description: |-
+  After getting more info on the attacker, we now want to know what allowed him to gain a reverse shell. Can you find the payload?
+  
+  Format: SparkCTF{`<SHA256 checksum of the payload>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{23228d827321de057415a675ee56835770d29d65a6f2fc2945df75725a85ae76}
+requirements:
+    - "Shiny ERP Part 6 - Cats and Shells"
+state: hidden
+version: "0.1"

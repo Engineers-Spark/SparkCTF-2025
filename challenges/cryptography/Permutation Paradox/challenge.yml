@@ -1,0 +1,23 @@
+name: "Permutation Paradox"
+author: "AGENTOO"
+category: crypto
+description: |-
+  Authentication is supposed to be secure, but is it really? Take a closer look, you might find something unexpected.
+
+  [https://permutation-paradox.espark.tn](https://permutation-paradox.espark.tn)
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{5de38922ba3c8fac6a116b81ef460695}
+files:
+  - handout/to_give.zip
+state: hidden
+version: "0.1"
+
+

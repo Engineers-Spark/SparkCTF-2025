@@ -1,0 +1,15 @@
+Filter For HTTP you will find Powershell code.
+
+The code is obfuscated, after Deobfuscating with PowerDecode you will see it injects a malicious XML code in Keepass config file.
+when the user decrypts his vault the trigger sends the decrypted vault to the attacker web server. (POST REQUEST)
+However it gets encrypted in AES before sending (Hardcoded key and IV)
+
+Now We have KEY and IV we need the data.
+
+Filter for http.request.method == "POST"
+
+Extract the data, it's encoded in b64
+
+Decode it then pass it to Aes Decryptor function with the key and iv we extracted earlier. 
+
+Submit the flag

@@ -1,0 +1,19 @@
+name: "Moveit"
+author: "SPYN0ZA"
+category: blockchain
+description: |-
+  do you like to move it move it? 
+
+  **author**: SPYN0ZA
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{i_like_to_move_it_moveit}
+files:
+  - handout/Moveit.mv
+state: hidden
+version: "0.1"

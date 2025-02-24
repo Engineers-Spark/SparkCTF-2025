@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: guess_the_flag
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 7000 /home/ctf/launch.sh"
+    ports:
+      - "6543:7000"
+    read_only: true

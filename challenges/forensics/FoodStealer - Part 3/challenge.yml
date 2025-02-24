@@ -1,0 +1,21 @@
+name: "FoodStealer Part 3 - Cat Proof"
+author: "videx"
+category: forensics
+description: |-
+  The victim remembers being asked for verification and that’s when his PC started lagging. Can you find the FQDN?
+  
+  Format: SparkCTF{`<FQDN>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{https://c2d418b3-19ae-4e6b-bd9c-69e2a3b88d44-00-t3hm3dwcfbrk.worf.replit.dev}
+requirements:
+    - "FoodStealer Part 2 - Cat ID"
+state: hidden
+version: "0.1"

@@ -1,0 +1,27 @@
+name: "FoodStealer - Scenario"
+author: "videx"
+category: forensics
+description: |-
+  Our team has recently discovered a new infostealer family called FoodStealer. We have conducted a Digital Forensics and Incident Response collection and obtained various artifacts from the affected machines. 
+  We need you to analyze these artifacts to determine what sensitive information the infostealer has exfiltrated and how the attack was carried out.
+  Use the link below to download the collection.
+
+  **https://drive.google.com/file/d/1lCUbOVs6x65rKXzz8iD78kOcphSfokj8/view?usp=sharing**
+
+  **ZIP Password**
+
+  > 351d92aa5f39f6b5258b6aea5a26c82cb4979d0359174a3436f91c020800b751
+  
+  > **PS: We've modified the payload to neutralize its malicious functionality while preserving its realistic behavior for simulation purposes. However, you should still exercise caution and avoid running anything locally to prevent unintended risks.**
+  
+  By agreeing, submit the following flag to start: 
+  
+  > **SparkCTF{proceed_with_caution}**
+
+  **author**: videx
+value: "0"
+type: standard
+flags:
+    - SparkCTF{proceed_with_caution}
+state: hidden
+version: "0.1"

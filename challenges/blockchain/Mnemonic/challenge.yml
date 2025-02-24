@@ -1,0 +1,19 @@
+name: "Mnemonic"
+author: "SPYN0ZA"
+category: blockchain
+description: |-
+  I have a mnemonic phrase that I need to remember. Can you get the first private key?
+
+  **author**: SPYN0ZA
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{0x584c98197d0341184ed3e4cd0304b9746d0adbb00507a6906fbc46b18eb806d1}
+files:
+  - handout/togive.txt
+state: hidden
+version: "0.1"

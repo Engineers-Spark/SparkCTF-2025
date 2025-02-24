@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: Hash_Overdrive
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 1337 /home/ctf/launch.sh"
+    ports:
+      - "5766:1337"
+    read_only: true

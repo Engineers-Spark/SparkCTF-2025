@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ctfchallenge:
+    build:
+      context: ./challenge  
+      dockerfile: Dockerfile           
+    container_name: grades_challenge                    
+    restart: always
+    cap_add:                           
+      - CHOWN                          
+      - DAC_OVERRIDE                   
+    cap_drop:                          
+      - ALL
+    ports:
+      - "4556:5000"                    

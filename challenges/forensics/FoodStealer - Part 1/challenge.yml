@@ -1,0 +1,21 @@
+name: "FoodStealer Part 1 - A Cats Integrity"
+author: "videx"
+category: forensics
+description: |-
+  To preserve the integrity of the Evidence.zip file, can you start by verifying the sha256 checksum of the collection file?
+  
+  Format: SparkCTF{`<SHA256 checksum>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{71B6ECEFACB89751F8679D68096CC9DD13F38BD8C02F8C595F1B9320E513629D}
+requirements:
+    - "FoodStealer - Scenario"
+state: hidden
+version: "0.1"

@@ -1,0 +1,9 @@
+services:
+  retro:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: retro
+    privileged: true
+    ports:
+      - "6112:1339"

@@ -1,0 +1,22 @@
+name: "FoodStealer Part 5 - Stealthy Cat"
+author: "videx"
+category: forensics
+description: |-
+  We suspect that something was executed in the background. Can you find it?
+  PS: Ignore any paths.  
+  
+  Format: SparkCTF{`<SHA256 checksum>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{74a27084321c874e2c1b31552b1d528df628fc34e33d0f7f97aa3517f7a66fb6}
+requirements:
+    - "FoodStealer Part 4 - Catsumor Support"
+state: hidden
+version: "0.1"

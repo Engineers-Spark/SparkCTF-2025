@@ -1,0 +1,23 @@
+name: "BugReportGen"
+author: "puu7"
+category: web
+description: |-
+  Warmup.
+  
+  **NB: pls work on your exploit locally first!**
+  
+  [https://bugreportgen.espark.tn](https://bugreportgen.espark.tn)
+
+  **author**: puu7
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{0e2dad7910368c527ecab3d56f64c960fe2e4e9310d9430e7bfe122503b53b6f}
+files:
+  - handout/web_BugReportGen.7z
+state: hidden
+version: "0.1"

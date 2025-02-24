@@ -1,0 +1,19 @@
+name: "analyser"
+author: "dullahan"
+category: hardware
+description: |-
+ this is a mixed signals you need to analyse them in order to understand
+
+  **author**: dullahan
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{Thi35gfIDKWHY7}
+files:
+  - handout/analyser.zip
+state: hidden
+version: "0.1"

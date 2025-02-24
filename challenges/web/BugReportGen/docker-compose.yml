@@ -1,0 +1,17 @@
+services:
+  bugreportgen:
+    build:
+      context: ./challenge
+      dockerfile: ./Dockerfile
+    container_name: bugreportgen
+    environment:
+      FLAG: "SparkCTF{0e2dad7910368c527ecab3d56f64c960fe2e4e9310d9430e7bfe122503b53b6f}"
+    restart: always
+    read_only: true
+    cap_add:
+      - CHOWN
+      - DAC_OVERRIDE
+    cap_drop:
+      - ALL
+    ports:
+      - "2755:8080"

@@ -1,0 +1,27 @@
+name: "alterno's crUsh Divison 2"
+author: "Alternox"
+category: rev
+description: |-
+  A Divison One Never Existed, I just like to seem old, Or am I already old? WHO YOU JUDGIN'
+
+  yes it crashs on startup, yes its intended, did you really think this task is about a girl? u simp. 
+
+  <center>
+
+  ![](https://i.giphy.com/l46Czzp0KEHSO7OdG.webp)
+
+  </center>
+    
+  > Auhtor : Alternox
+value: "500"
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{B33n_W4171ng_4_50_L0nGo}
+state: hidden
+files:
+  - handout/main
+version: "0.1"

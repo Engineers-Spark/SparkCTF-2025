@@ -1,0 +1,1 @@
+FLAG =b'SparkCTF{45c3ef2c23f0d7d1ed202bb5655cda78}'

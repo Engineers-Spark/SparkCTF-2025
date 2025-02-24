@@ -1,0 +1,20 @@
+name: "The Notorious liB.I.C"
+author: "alternox"
+category: pwn
+description: |-
+  
+  Biggie Smalls, the king of Brooklyn, Been Spitting Bars for so long, shapeshifting the rap game, now its your turn to study the bars well, and distinguish which path to take and which song to check.
+
+  **author**: retr0
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{7h3_N070r10u5_l1B.1.C_15_0u7_0f_5c0p3}
+files:
+  - handout/ret_togive.7z
+state: hidden
+version: "0.1" 

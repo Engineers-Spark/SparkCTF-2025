@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 4 - Running Cats in Background"
+author: "videx"
+category: forensics
+description: |-
+  The asset owners mentioned something about using this host as a server. Can you find the name of that application running on this asset?
+  
+  Format: SparkCTF{`<Application name>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{Apache OFBiz}
+requirements:
+    - "Shiny ERP Part 3 - A Cat's Network"
+state: hidden
+version: "0.1"

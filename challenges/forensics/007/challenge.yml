@@ -1,0 +1,21 @@
+name: "007"
+author: "iwd"
+category: forensics
+description: |-
+  Is using my own Os a big deal ?
+  
+  Format: SparkCTF{}
+
+  **author**: iwd
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{User_4gent5_4re_easy_t0_3dit}
+state: hidden
+files:
+    - handout/007.pcap
+version: "0.1"

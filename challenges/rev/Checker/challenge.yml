@@ -1,0 +1,19 @@
+name: "Checker"
+author: "GARROURA"
+category: rev
+description: |-
+  Grab the flag to join the Spark Empire ! 
+
+  **author**: GARROURA
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{I_Want_TOtO_make_youR_LAYFE_B3tter1478523}
+files:
+  - handout/Togive.zip
+state: hidden
+version: "0.1"

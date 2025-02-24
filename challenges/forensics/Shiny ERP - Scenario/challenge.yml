@@ -1,0 +1,26 @@
+name: "Shiny ERP - Scenario"
+author: "videx"
+category: forensics
+description: |-
+  We have recently experienced a critical incident affecting a client's server. An unknown threat actor gained unauthorized access, manipulated critical data, and tried to cause system-wide failure before vanishing. 
+  There were no ransom demands, no apparent financial motives.
+
+  Your assignment is to analyze the incident and provide insights into how this happened.
+
+  **https://drive.google.com/file/d/1O6GmkeZqVE7vt6r9akFgw-QkKWG0bh3x/view?usp=sharing**
+  
+  **ZIP Password**
+  
+  > ba26aa7911ca9922abc6c3b29bd15858814155f8c0c6d2a65b012caeeabf9cbd
+  
+  Submit the following flag to start
+  
+  >  **SparkCTF{proceed_with_caution}**
+
+  **author**: videx
+value: "0"
+type: standard
+flags:
+    - SparkCTF{proceed_with_caution}
+state: hidden
+version: "0.1"

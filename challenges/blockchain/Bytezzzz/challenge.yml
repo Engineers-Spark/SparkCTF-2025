@@ -1,0 +1,20 @@
+name: "Bytezzzz"
+author: "SPYN0ZA"
+category: blockchain
+description: |-
+  only the right signature can get you the flag
+  flag is in the format SparkCTF{SIGNATURE}
+
+  **author**: SPYN0ZA
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{0x6db74a31}
+files:
+  - handout/togive.txt
+state: hidden
+version: "0.1"

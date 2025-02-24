@@ -1,0 +1,23 @@
+name: "www"
+author: "retr0"
+category: pwn
+description: |-
+  W warmup.
+
+  `nc tcp.espark.tn 5515`
+  
+  **NB: pls work on your exploit locally first!**
+
+  **author**: retr0
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{f8c39d293a5c7ae748d843b675498df2773843656254cd815f4fda25ba762c73}
+files:
+  - handout/www.7z
+state: hidden
+version: "0.1"

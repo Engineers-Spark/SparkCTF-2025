@@ -1,0 +1,21 @@
+name: "FoodStealer Part 2 - Cat ID"
+author: "videx"
+category: forensics
+description: |-
+  Before diving deep in the artifacts, can you collect some details about the affected asset?
+  
+  Format: SparkCTF{`<user>_<computer name>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{mark-R&D_DESKTOP-9VPMFKJ}
+requirements:
+    - "FoodStealer Part 1 - A Cats Integrity"
+state: hidden
+version: "0.1"

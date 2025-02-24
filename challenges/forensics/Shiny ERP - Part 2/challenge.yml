@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 2 - Basic Cat Stuff"
+author: "videx"
+category: forensics
+description: |-
+  We want you to start by identifying the hostname, OS distribution and version number. Can you provide us with the information?
+  
+  Format: SparkCTF{`<hostname>_<OS distribution>_<version number>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{spark-erpserver_ubuntu_22.04}
+requirements:
+    - "Shiny ERP Part 1 - Integrity Check"
+state: hidden
+version: "0.1"

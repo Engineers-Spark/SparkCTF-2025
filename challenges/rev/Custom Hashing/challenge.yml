@@ -1,0 +1,21 @@
+name: "Custom Hashing"
+author: "Iyed"
+category: rev
+description: |-
+  GO is powerful so why not implement my own hashing algorithm. Let's see if you can break it!
+
+  You can try on this sample because it's lengthy: `ce335371795f5d424e73eb3c825af95ba73a763d0b4711cb03562e68c410be86fd2fc4484ecf0e6471767eb363d67e109dc9aae8b3397c5aae504aaeb487f6422ae0b27032`
+
+  **author**: Iyed
+value: "500"
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{B@bY_Cu5t0M_H@$h!n6_B34CaUSe_W3Ak_TimES_CrEaTe_WeAk_CRYPTO!}
+files:
+    - handout/elChahElchah
+state: hidden
+version: "0.1"

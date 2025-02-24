@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Reset Password</h2>
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="token">Reset Token:</label>
+    <input type="text" id="token" name="token" required>
+    
+    <label for="new_password">New Password:</label>
+    <input type="password" id="new_password" name="new_password" required>
+    
+    <button type="submit">Reset Password</button>
+</form>
+{% endblock %}

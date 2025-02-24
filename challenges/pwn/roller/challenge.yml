@@ -1,0 +1,23 @@
+name: "roll"
+author: "retr0"
+category: pwn
+description: |-
+  roll and burn t'ill shutdown.
+
+  `nc tcp.espark.tn 5322`
+
+  **NB: pls work on your exploit locally first!**
+
+  **author**: retr0
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{3b09b183c6218152a3f2e2fba0d8f570f271df71926fff48f17d90eb4b7fa529}
+files:
+  - handout/roller.7z
+state: hidden
+version: "0.1" 

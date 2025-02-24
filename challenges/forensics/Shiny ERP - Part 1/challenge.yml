@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 1 - Integrity Check"
+author: "videx"
+category: forensics
+description: |-
+  Let’s start by verifying the evidence’s integrity. Can you give me the SHA256 checksum?
+  
+  Format: SparkCTF{`<SHA256 checksum>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{213EFCEBA948FEDBB0505630F8E0B220EC5BF50EFE75BF61E1780503883DDE76}
+requirements:
+    - "Shiny ERP - Scenario"
+state: hidden
+version: "0.1"

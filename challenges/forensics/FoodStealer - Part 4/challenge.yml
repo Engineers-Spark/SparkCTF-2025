@@ -1,0 +1,21 @@
+name: "FoodStealer Part 4 - Catsumor Support"
+author: "videx"
+category: forensics
+description: |-
+  We suspect that during the human verification phase, the user might have been forced to execute something, can you retrieve it?
+  
+  Format: SparkCTF{`<SHA256 checksum>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{1bbe4cf2c7e714b3a9c865d3dd30a49fcd03243effb6ec76838df6276926e0d0}
+requirements:
+    - "FoodStealer Part 3 - Cat Proof"
+state: hidden
+version: "0.1"

@@ -1,0 +1,21 @@
+name: "Shiny ERP Part 9 - Funny Cat"
+author: "videx"
+category: forensics
+description: |-
+  In an attempt to ruin the server, the attacker tried to mass-corrupt the system’s files. Can you find the executed command and it’s source?
+  
+  Format: SparkCTF{`<SHA256 checksum of the command>_<Source>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{1a86196a739e250f7324248e1b7baef64da5d048ee94f2fc3f2ac8228efe9c68_https://filebin.net/ybayxxy2cx7t44jy/prog.txt}
+requirements:
+    - "Shiny ERP Part 8 - Cat-Brain.exe has stopped working!"
+state: hidden
+version: "0.1"

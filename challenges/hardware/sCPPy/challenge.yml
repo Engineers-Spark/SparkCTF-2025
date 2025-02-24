@@ -1,0 +1,19 @@
+name: "sCPPy"
+author: "dullahan"
+category: hardware
+description: |-
+  somehow we found signals from a logic analyser , just follow the link and check the image
+
+  **author**: dullahan
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - SparkCTF{SOFT1304}
+files:
+  - handout/sCPPy.zip
+state: hidden
+version: "0.1"

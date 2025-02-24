@@ -1,0 +1,22 @@
+name: "Shiny ERP Part 10 - A Cat Who Loves Exploits"
+author: "videx"
+category: forensics
+description: |-
+  Coffee, our CTI analyst mentioned something about an Apache OFBiz exploit being publicly available and might the same used in this incident. 
+  Based on what you’ve gathered so far, can you find the CVE and CWE ID?
+  
+  Format: SparkCTF{`<CVE ID>_<CWE ID>`}
+
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+    - SparkCTF{CVE-2024-38856_CWE-863}
+requirements:
+    - "Shiny ERP Part 9 - Funny Cat"
+state: hidden
+version: "0.1"

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="jumbotron">
+    <div class="container" >
+      <h1>
+        {% trans %}Challenges <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 25 25" class="mb-3">
+          <path fill="currentColor" d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"></path>
+        </svg>{% endtrans %}
+      </h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% include "components/errors.html" %}
+      </div>
+    </div>
+
+    <div 
+      x-data="ChallengeBoard" 
+      @load-challenges.window="loadChallenges()" 
+      @load-challenge.window="loadChallenge($event.detail)"
+    >
+      <div
+          x-ref="challengeWindow" id="challenge-window" class="modal fade" tabindex="-1" role="dialog" x-data=""
+          x-html="$store.challenge.data.view"
+      ></div>
+
+      <div x-show="!loaded">
+        <div class="min-vh-50 d-flex align-items-center">
+          <div class="text-center w-100">
+            <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+          </div>
+        </div>
+      </div>
+      <div x-show="loaded">
+        <template x-for="(category, idx) in getCategories()" :key="idx">
+          <div class="py-3 rounded">
+            <div class="category-header">
+              <h3 x-text="category" class="fw-bold text-uppercase "></h3>
+            </div>
+        
+            <div class="category-challenges d-flex flex-column">
+              <div class="challenges-row row">
+                <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
+                  <div class="col-3 mt-3">
+                    <button
+                      class="btn btn-dark w-100 d-flex flex-column justify-content-between"
+                      :class="c.solved_by_me ? 'challenge-solved' : ''"
+                      :value="c.id"
+                      @click="loadChallenge(c.id)"
+                      style="min-height: 100%;" 
+                    >
+                      <div class="challenge-inner d-flex flex-column justify-content-between px-3 py-4">
+                        <div class="mb-3">
+                          <span x-text="c.name"></span>
+                        </div>
+                        <div class="challenge-value fw-bold">
+                          <span x-text="c.value"></span> pts                            
+                        </div>                    
+                      </div>
+                    </button>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </template>
+        
+        
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ Assets.js("assets/js/challenges.js") }}
+{% endblock %}
